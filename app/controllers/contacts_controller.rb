@@ -13,6 +13,10 @@ class ContactsController < ApplicationController
     @contacts = Contact.all
   end
 
+  def groups
+    @contacts = Group.find_by()
+  end
+
   def new
   
   end
